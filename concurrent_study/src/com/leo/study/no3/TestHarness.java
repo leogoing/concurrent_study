@@ -38,7 +38,7 @@ public class TestHarness {
 	
 	public static void main(String[] args) throws InterruptedException {
 		TestHarness t=new TestHarness();
-		long time=t.timeTasks(40, new Runnable(){
+		long time=t.timeTasks(10, new Runnable(){
 			public void run(){
 				System.out.println(Thread.currentThread().getName()+" is running...");
 				
